@@ -363,7 +363,7 @@ def betterEvaluationFunction(currentGameState):
         dist = util.manhattanDistance(pacman_pos, ghost_pos)
 
         if scared_time > 0:
-            # 유령이 scared 상태면 가까이 갈수록 이득득
+            # 유령이 scared 상태면 가까이 갈수록 이득
             score += 200 / (dist + 1)
         else:
             # 일반 유령이면 가까울수록 위험
